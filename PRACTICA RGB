@@ -1,0 +1,41 @@
+void loop() {
+// Leer estados de los botones
+int BUTTON1_state = digitalRead(BUTTON1_PIN);
+int BUTTON2_state = digitalRead(BUTTON2_PIN);
+
+// Combinaciones de colores de LED
+if(BUTTON1_state == LOW && BUTTON2_state == HIGH) {
+// Combinación RB (rojo y azul)
+digitalWrite(LED_R_PIN, HIGH);
+digitalWrite(LED_G_PIN, LOW);
+digitalWrite(LED_B_PIN, HIGH);
+delay(500); // Mostrar por 500 milisegundos
+digitalWrite(LED_R_PIN, LOW);
+digitalWrite(LED_G_PIN, LOW);
+digitalWrite(LED_B_PIN, LOW);
+} else if (BUTTON1_state == LOW) {
+// Combinación RG (rojo y verde)
+digitalWrite(LED_R_PIN, HIGH);
+digitalWrite(LED_G_PIN, HIGH);
+digitalWrite(LED_B_PIN, LOW);
+} else if (BUTTON2_state == LOW) {
+// Combinación GB (verde y azul)
+digitalWrite(LED_R_PIN, LOW);
+digitalWrite(LED_G_PIN, HIGH);
+digitalWrite(LED_B_PIN, HIGH);
+} else {
+// Secuencia de colores por defecto (rojo, verde, azul)
+digitalWrite(LED_R_PIN, HIGH);
+digitalWrite(LED_G_PIN, LOW);
+digitalWrite(LED_B_PIN, LOW);
+delay(500); // Mostrar rojo por 500ms
+digitalWrite(LED_R_PIN, LOW);
+digitalWrite(LED_G_PIN, HIGH);
+digitalWrite(LED_B_PIN, LOW);
+delay(500); // Mostrar verde por 500ms
+digitalWrite(LED_R_PIN, LOW);
+digitalWrite(LED_G_PIN, LOW);
+digitalWrite(LED_B_PIN, HIGH);
+delay(500); // Mostrar azul por 500ms
+}
+}
