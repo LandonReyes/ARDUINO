@@ -1,3 +1,12 @@
+/*Fundación Kinal
+//Centro Educativo Técnico Labral Kinal
+//Electrónica
+//Grado: Quinto
+//Sección: A
+//Curso: Taller de Electrónica Digital y Reparación de Computadoras I
+//Nombre: Landon Francisco Alexander Reyes Baten
+Carné: 2022012
+*/
 //definir pines de lcd
 #include <LiquidCrystal.h>
 #define RS 2
