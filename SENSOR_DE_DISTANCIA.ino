@@ -1,3 +1,12 @@
+/*Fundación Kinal
+//Centro Educativo Técnico Labral Kinal
+//Electrónica
+//Grado: Quinto
+//Sección: A
+//Curso: Taller de Electrónica Digital y Reparación de Computadoras I
+//Nombre: Landon Francisco Alexander Reyes Baten
+Carné: 2022012
+*/
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
